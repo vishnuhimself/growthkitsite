@@ -57,6 +57,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Preload critical images */}
+        <link
+          rel="preload"
+          href="/GrowthKit-Hero.webp"
+          as="image"
+          type="image/webp"
+        />
+        <link
+          rel="preload"
+          href="/GrowthKit-FavIcon.png"
+          as="image"
+          type="image/png"
+        />
+      </head>
       <body className={inter.className}>
         <div className="relative flex min-h-screen flex-col">
           <Header />

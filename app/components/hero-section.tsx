@@ -51,13 +51,15 @@ export function HeroSection() {
             </div>
           </div>
           <div className="md:w-7/12 md:-mr-24">
-            <div className="relative h-[400px] md:h-[600px] lg:h-[800px] w-full rounded-2xl ">
+            <div className="relative h-[400px] md:h-[600px] lg:h-[800px] w-full rounded-2xl">
               <Image
                 src="/GrowthKit-Hero.webp"
                 alt="GrowthKit App Interface showing growth tracking features"
                 fill
                 className="object-contain scale-110"
-                priority
+                priority={true}
+                quality={90}
+                sizes="(max-width: 768px) 100vw, 58.333333%"
               />
             </div>
           </div>

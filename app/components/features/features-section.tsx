@@ -21,7 +21,9 @@ export function FeaturesSection() {
                   alt="Profile management screen"
                   fill
                   className="object-contain"
-                  quality={95}
+                  quality={75}
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
               <div>
@@ -43,7 +45,9 @@ export function FeaturesSection() {
                   alt="Dashboard screen"
                   fill
                   className="object-contain"
-                  quality={95}
+                  quality={75}
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
               <div>
@@ -65,7 +69,9 @@ export function FeaturesSection() {
                   alt="Growth tracking charts and analytics"
                   fill
                   className="object-contain"
-                  quality={95}
+                  quality={75}
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
               <div>
@@ -88,7 +94,9 @@ export function FeaturesSection() {
                   alt="Elegant dark mode interface"
                   fill
                   className="object-contain"
-                  quality={95}
+                  quality={75}
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
               <div className="text-white">
@@ -110,7 +118,9 @@ export function FeaturesSection() {
                   alt="Comprehensive insights dashboard"
                   fill
                   className="object-contain"
-                  quality={95}
+                  quality={75}
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
               <div>
@@ -132,7 +142,9 @@ export function FeaturesSection() {
                   alt="Flexible measurement system options"
                   fill
                   className="object-contain"
-                  quality={95}
+                  quality={75}
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
               <div>

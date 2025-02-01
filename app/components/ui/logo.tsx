@@ -9,7 +9,8 @@ export function Logo() {
         width={32}
         height={32}
         className="object-cover"
-        priority
+        priority={true}
+        quality={100}
       />
     </div>
   )
