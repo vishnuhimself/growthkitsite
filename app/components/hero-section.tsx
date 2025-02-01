@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowUpRight } from 'lucide-react'
+import { ArrowUpRight, Download, Sparkles } from 'lucide-react'
 
 export function HeroSection() {
   const scrollToFeatures = () => {
@@ -35,18 +35,20 @@ export function HeroSection() {
               <span className="font-semibold text-foreground">BMI</span>.{' '}
               Keep your health records organized, visualized, and always accessible.
             </p>
-            <div className="flex flex-col gap-4 min-[400px]:flex-row">
+            <div className="flex flex-col w-full gap-3 sm:flex-row sm:w-auto">
               <Link
                 href="#download"
-                className="inline-flex h-12 items-center justify-center rounded-md bg-primary px-8 text-base font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+                className="flex h-12 items-center justify-center gap-2 rounded-xl bg-primary px-8 text-base font-medium text-primary-foreground transition-all hover:bg-primary/90 hover:scale-105"
               >
-                Download Now
+                <Download className="w-5 h-5" />
+                <span>Download Now</span>
               </Link>
               <button
                 onClick={scrollToFeatures}
-                className="inline-flex h-12 items-center justify-center rounded-md border border-input bg-background px-8 text-base font-medium transition-colors hover:bg-accent hover:text-accent-foreground"
+                className="flex h-12 items-center justify-center gap-2 rounded-xl border border-input bg-background px-8 text-base font-medium transition-all hover:bg-accent hover:text-accent-foreground hover:scale-105"
               >
-                Explore Features
+                <Sparkles className="w-5 h-5" />
+                <span>Explore Features</span>
               </button>
             </div>
           </div>
