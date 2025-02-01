@@ -72,7 +72,7 @@ export function FeaturesSection() {
                 <h3 className="text-xl font-semibold mb-2">Advanced Analytics & Beautiful Charts</h3>
                 <p className="text-muted-foreground">
                   Visualize growth patterns with our stunning interactive charts. Track everything from height velocity 
-                  to BMI trends with precision. Make informed decisions with comprehensive data visualization that's both 
+                  to BMI trends with precision. Make informed decisions with comprehensive data visualization that&apos;s both 
                   beautiful and insightful.
                 </p>
               </div>

@@ -42,15 +42,15 @@ export default function PrivacyPolicy() {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">Data Security</h2>
           <p>
-            Your data is secured by your device's built-in security features. Since all data is stored locally, 
-            it benefits from your device's encryption and security measures.
+            Your data is secured by your device&apos;s built-in security features. Since all data is stored locally, 
+            it benefits from your device&apos;s encryption and security measures.
           </p>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">Children's Privacy</h2>
+          <h2 className="text-2xl font-semibold mb-4">Children&apos;s Privacy</h2>
           <p>
-            While GrowthKit can be used to track children's growth, all data management must be done by parents 
+            While GrowthKit can be used to track children&apos;s growth, all data management must be done by parents 
             or legal guardians. We do not knowingly collect any personal information from children.
           </p>
         </section>

@@ -6,7 +6,7 @@ export default function Support() {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
           <p className="mb-4">
-            We're here to help you with any questions or issues you might have with GrowthKit.
+            We&apos;re here to help you with any questions or issues you might have with GrowthKit.
           </p>
           <div className="bg-slate-50 p-6 rounded-lg">
             <h3 className="text-xl font-medium mb-2">Email Support</h3>
