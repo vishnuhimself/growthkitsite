@@ -13,7 +13,7 @@
 
 ## Tech Stack
 
-- Next.js 15
+- Next.js 14
 - TypeScript
 - Tailwind CSS
 - Shadcn UI
