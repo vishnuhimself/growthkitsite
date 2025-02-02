@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowUpRight, Download, Sparkles, PersonStanding, Ruler, Weight } from 'lucide-react'
+import { ArrowUpRight, Download, Sparkles, PersonStanding, Ruler, Weight, MessageCircleHeart, Heart } from 'lucide-react'
 
 export function HeroSection() {
   const scrollToFeatures = () => {
@@ -19,27 +19,33 @@ export function HeroSection() {
               Track {' '}
               <br className="block md:hidden" />
               <span className="relative inline-flex flex-col my-2">
-                <span className="relative z-10 bg-[#0A0A0A] px-6 py-2 text-white rounded-lg">
+                <span className="relative z-10 bg-[#F0F0F0] px-6 py-2 text-black rounded-lg">
                   BMI
-                  <PersonStanding strokeWidth={3} className="absolute -top-2 -right-2 w-7 h-7 text-black border border-grey bg-white shadow-lg rounded-md p-1" />
+                  <PersonStanding strokeWidth={2} className="absolute -top-2 -right-2 w-7 h-7 text-black border border-grey bg-white shadow-lg rounded-md p-1" />
                 </span>
               </span>
               ,{' '}
               <span className="relative inline-flex flex-col my-2">
-                <span className="relative z-10 bg-[#0A0A0A] px-6 py-2 text-white rounded-lg">
+                  <span className="relative z-10 bg-[#F0F0F0] px-6 py-2 text-black rounded-lg">
                   Height
-                  <Ruler strokeWidth={3} className="absolute -top-2 -right-2 w-7 h-7 text-black border border-grey bg-white shadow-lg rounded-md p-1" />
+                    <Ruler strokeWidth={2} className="absolute -top-2 -right-2 w-7 h-7 text-black border border-grey bg-white shadow-lg rounded-md p-1" />
                 </span>
               </span>
               {' '}&{' '}
               <span className="relative inline-flex flex-col my-2">
-                <span className="relative z-10 bg-[#0A0A0A] px-6 py-2 text-white rounded-lg">
+                <span className="relative z-10 bg-[#F0F0F0] px-6 py-2 text-black rounded-lg">
                   Weight
-                  <Weight strokeWidth={3} className="absolute -top-2 -right-2 w-7 h-7 text-black border border-grey bg-white shadow-lg rounded-md p-1" />
+                  <Weight strokeWidth={2} className="absolute -top-2 -right-2 w-7 h-7 text-black border border-grey bg-white shadow-lg rounded-md p-1" />
                 </span>
               </span>
               <br className="hidden md:block" />
-              {' '}with ease
+              {' '}for your entire{' '}
+              <span className="relative inline-flex flex-col my-2">
+                <span className="relative z-10 bg-[#F0F0F0] px-6 py-2 text-black rounded-lg">
+                  family
+                  <Heart strokeWidth={2} className="absolute -top-2 -right-2 w-7 h-7 text-black border border-grey bg-white shadow-lg rounded-md p-1" />
+                </span>
+              </span>
             </h1>
             <p className="text-xl text-muted-foreground md:text-2xl leading-relaxed">
               The complete <span className="font-bold text-black border-b-2 border-black">kit</span> for monitoring{' '}
