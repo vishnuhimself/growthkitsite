@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowUpRight, Download, Sparkles } from 'lucide-react'
+import { ArrowUpRight, Download, Sparkles, PersonStanding, Ruler, Weight } from 'lucide-react'
 
 export function HeroSection() {
   const scrollToFeatures = () => {
@@ -15,25 +15,44 @@ export function HeroSection() {
       <div className="container mx-auto max-w-7xl px-6">
         <div className="flex flex-col gap-8 md:flex-row md:items-center">
           <div className="flex flex-col gap-6 md:w-5/12">
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-6xl">
-              Track Your{' '}
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-4xl lg:text-5xl">
+              Track {' '}
               <br className="block md:hidden" />
               <span className="relative inline-flex flex-col my-2">
                 <span className="relative z-10 bg-[#0A0A0A] px-6 py-2 text-white rounded-lg">
-                  Growth
-                  <ArrowUpRight strokeWidth={3} className="absolute -top-2 -right-2 w-8 h-8 text-black bg-white drop-shadow-lg border border-grey rounded-full p-1" />
+                  BMI
+                  <PersonStanding strokeWidth={3} className="absolute -top-2 -right-2 w-7 h-7 text-black border border-grey bg-white shadow-lg rounded-md p-1" />
                 </span>
               </span>
-              {' '}Journey
+              ,{' '}
+              <span className="relative inline-flex flex-col my-2">
+                <span className="relative z-10 bg-[#0A0A0A] px-6 py-2 text-white rounded-lg">
+                  Height
+                  <Ruler strokeWidth={3} className="absolute -top-2 -right-2 w-7 h-7 text-black border border-grey bg-white shadow-lg rounded-md p-1" />
+                </span>
+              </span>
+              {' '}&{' '}
+              <span className="relative inline-flex flex-col my-2">
+                <span className="relative z-10 bg-[#0A0A0A] px-6 py-2 text-white rounded-lg">
+                  Weight
+                  <Weight strokeWidth={3} className="absolute -top-2 -right-2 w-7 h-7 text-black border border-grey bg-white shadow-lg rounded-md p-1" />
+                </span>
+              </span>
               <br className="hidden md:block" />
-              {' '}with Confidence
+              {' '}with ease
             </h1>
-            <p className="text-xl text-muted-foreground md:text-2xl">
-              The complete solution for monitoring{' '}
-              <span className="font-semibold text-foreground">height</span>,{' '}
-              <span className="font-semibold text-foreground">weight</span>, and{' '}
-              <span className="font-semibold text-foreground">BMI</span>.{' '}
-              Keep your health records organized, visualized, and always accessible.
+            <p className="text-xl text-muted-foreground md:text-2xl leading-relaxed">
+              The complete <span className="font-bold text-black border-b-2 border-black">kit</span> for monitoring{' '}
+              <span className="inline-flex items-center relative">
+                <span className="relative z-10 bg-[#0A0A0A] px-2 pr-4 py-0.5 text-white rounded-lg">
+                  Growth
+                  <ArrowUpRight 
+                    strokeWidth={3} 
+                    className="absolute -top-1 -right-1 w-5 h-5 text-black border border-grey bg-white shadow-lg rounded-full p-1" 
+                  />
+                </span>
+              </span>
+              {' '}for you and your loved ones. Keep your health records organized, visualized, and always accessible.
             </p>
             <div className="flex flex-col w-full gap-3 sm:flex-row sm:w-auto">
               <Link
