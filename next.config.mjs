@@ -8,7 +8,7 @@ const nextConfig = {
         hostname: 'growthkitapp.com',
       },
     ],
-  },
+  }
 }
 
 export default nextConfig

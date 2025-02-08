@@ -7,7 +7,11 @@ import { Footer } from '@/app/components/footer'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "GrowthKit - Track BMI, Weight, and Height Effectively",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://growthkitapp.com'),
+  title: {
+    default: 'GrowthKit - Track BMI, Weight, and Height Effectively',
+    template: '%s | GrowthKit'
+  },
   description: "Track height, weight, and BMI with beautiful charts and insights. Multiple profiles, dark mode, and support for both metric & imperial measurements. The perfect companion for monitoring your family's growth journey.",
   icons: {
     icon: [
@@ -37,16 +41,16 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "GrowthKit Team" }],
   openGraph: {
-    title: "GrowthKit - Smart Growth Tracking for Everyone",
-    description: "Beautiful analytics and insights for tracking height, weight, and BMI. Perfect for the whole family.",
+    title: "GrowthKit - Track BMI, Weight, and Height Effectively",
+    description: "Track height, weight, and BMI with beautiful charts and insights. Multiple profiles, dark mode, and support for both metric & imperial measurements. The perfect companion for monitoring your family's growth journey.",
     type: "website",
     locale: "en_US",
     siteName: "GrowthKit",
   },
   twitter: {
     card: "summary_large_image",
-    title: "GrowthKit - Smart Growth Tracking for Everyone",
-    description: "Beautiful analytics and insights for tracking height, weight, and BMI. Perfect for the whole family.",
+    title: "GrowthKit - Track BMI, Weight, and Height Effectively",
+    description: "Track height, weight, and BMI with beautiful charts and insights. Multiple profiles, dark mode, and support for both metric & imperial measurements. The perfect companion for monitoring your family's growth journey.",
   },
 };
 

@@ -1,3 +1,25 @@
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy',
+  description: 'GrowthKit privacy policy. Learn how we protect your data, what information we collect, and how we use it to provide height, weight, and BMI tracking services.',
+  keywords: [
+    'GrowthKit privacy',
+    'privacy policy',
+    'data protection',
+    'user privacy',
+    'data security',
+    'personal information',
+    'data collection',
+    'privacy terms'
+  ],
+  openGraph: {
+    title: 'GrowthKit Privacy Policy',
+    description: 'Learn how GrowthKit protects your data and privacy. Transparent information about data collection, usage, and security measures.',
+    type: 'website',
+  }
+}
+
 export default function PrivacyPolicy() {
   return (
     <div className="container mx-auto max-w-3xl px-6 py-24">

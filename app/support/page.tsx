@@ -1,3 +1,25 @@
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Support - Get Help & Contact Us',
+  description: 'Get help with GrowthKit app. Find answers to common questions about tracking height, weight, BMI, and using the app features. Contact our support team for assistance.',
+  keywords: [
+    'GrowthKit support',
+    'GrowthKit help',
+    'BMI tracking help',
+    'weight tracking support',
+    'height tracking assistance',
+    'GrowthKit FAQ',
+    'GrowthKit contact',
+    'growth tracking app support'
+  ],
+  openGraph: {
+    title: 'GrowthKit Support - Get Help & Contact Us',
+    description: 'Get help with GrowthKit app. Find answers to common questions about tracking height, weight, BMI, and using the app features.',
+    type: 'website',
+  }
+}
+
 export default function Support() {
   return (
     <div className="container mx-auto max-w-3xl px-6 py-24">
