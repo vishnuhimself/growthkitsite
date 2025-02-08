@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { Download, Sparkles } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useState, useEffect } from 'react'
+import { AppleLogo } from '@/app/components/ui/apple-logo'
 
 const messages = [
   {
@@ -71,11 +72,13 @@ export function HeroSection() {
 
             <div className="flex flex-col w-full gap-3 sm:flex-row sm:w-auto">
               <Link
-                href="#download"
+                href="https://apps.apple.com/app/growthkit-track-height-weight/id6740914430"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex h-12 items-center justify-center gap-2 rounded-xl bg-primary px-8 text-base font-medium text-primary-foreground transition-all hover:bg-primary/90 hover:scale-105"
               >
-                <Download className="w-5 h-5" />
-                <span>Download Now</span>
+                <AppleLogo />
+                <span>Download on App Store</span>
               </Link>
               <button
                 onClick={scrollToFeatures}
