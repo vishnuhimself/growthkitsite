@@ -60,13 +60,13 @@ export default function RootLayout({
       <head>
         {/* Preload critical images */}
         <link
-          rel="preload"
+         // rel="preload"
           href="/GrowthKit-Hero.webp"
           as="image"
           type="image/webp"
         />
         <link
-          rel="preload"
+         // rel="preload"
           href="/GrowthKit-FavIcon.png"
           as="image"
           type="image/png"
