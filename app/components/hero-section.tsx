@@ -94,7 +94,7 @@ export function HeroSection() {
                 alt="GrowthKit App Interface showing growth tracking features"
                 fill
                 className="object-contain scale-110"
-                priority={true}
+                priority
                 quality={90}
                 sizes="(max-width: 768px) 100vw, 58.333333%"
               />
