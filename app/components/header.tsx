@@ -7,14 +7,25 @@ export function Header() {
     <header className="fixed top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto max-w-7xl px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link 
-            href="/" 
-            className="flex items-center space-x-3"
-            prefetch={true}
-          >
-            <Logo />
-            <span className="text-xl font-bold">GrowthKit</span>
-          </Link>
+          <div className="flex items-center gap-8">
+            <Link 
+              href="/" 
+              className="flex items-center space-x-3"
+              prefetch={true}
+            >
+              <Logo />
+              <span className="text-xl font-bold">GrowthKit</span>
+            </Link>
+            
+            <nav className="hidden md:flex items-center gap-6">
+              <Link 
+                href="/blog"
+                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Blog
+              </Link>
+            </nav>
+          </div>
 
           <Link
             href="https://apps.apple.com/app/growthkit-track-height-weight/id6740914430"
