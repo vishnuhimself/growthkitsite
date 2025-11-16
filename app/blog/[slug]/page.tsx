@@ -15,6 +15,8 @@ import { ReadingProgress } from '@/app/components/blog/reading-progress'
 import { authorProfile } from '@/app/lib/author-config'
 import Image from 'next/image'
 
+export const revalidate = 3600 // Revalidate every hour (3600 seconds)
+
 interface BlogPostPageProps {
   params: {
     slug: string
@@ -77,6 +79,16 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
   
   if (!post) {
     notFound()
+  }
+
+  // Check if post is scheduled for future
+  const today = new Date()
+  today.setHours(0, 0, 0, 0)
+  const postDate = new Date(post.date)
+  postDate.setHours(0, 0, 0, 0)
+  
+  if (postDate > today) {
+    notFound() // Return 404 for future posts
   }
 
   const relatedPosts = getRelatedPosts(post, 3)

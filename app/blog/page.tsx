@@ -2,6 +2,8 @@ import { Metadata } from 'next'
 import { getAllPosts } from '@/app/lib/blog-utils'
 import { BlogCard } from '@/app/components/blog/blog-card'
 
+export const revalidate = 3600 // Revalidate every hour (3600 seconds)
+
 export const metadata: Metadata = {
   title: 'Blog',
   description: 'Read articles about health tracking, BMI, growth monitoring, and family wellness from the GrowthKit team.',

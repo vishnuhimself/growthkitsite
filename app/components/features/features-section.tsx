@@ -7,7 +7,7 @@ export function FeaturesSection() {
       className="relative w-full bg-slate-50 scroll-mt-20"
     >
       <div className="container mx-auto max-w-7xl px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-16">
           <div className="col-span-full mb-2">
             <h2 className="text-4xl font-bold tracking-tight text-center">Powerful Features for Everyone</h2>
           </div>
@@ -84,8 +84,7 @@ export function FeaturesSection() {
                 <h3 className="text-xl font-semibold mb-2">Advanced Analytics & Beautiful Charts</h3>
                 <p className="text-muted-foreground">
                   Visualize growth patterns with our stunning interactive charts. Track everything from height velocity 
-                  to BMI trends with precision. Make informed decisions with comprehensive data visualization that&apos;s both 
-                  beautiful and insightful.
+                  to BMI trends with precision.
                 </p>
               </div>
             </div>

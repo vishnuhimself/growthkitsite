@@ -1,12 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { HighlightBox } from './highlight-box'
 
 interface MDXComponentsProps {
   [key: string]: React.ComponentType<any>
 }
 
 export const mdxComponents: MDXComponentsProps = {
+  HighlightBox,
   // Headings
   h1: ({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h1

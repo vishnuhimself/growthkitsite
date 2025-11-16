@@ -13,6 +13,9 @@ export function getAllPosts(): BlogPostMetadata[] {
   }
 
   const fileNames = fs.readdirSync(postsDirectory)
+  const today = new Date()
+  today.setHours(0, 0, 0, 0) // Start of today
+  
   const allPostsData = fileNames
     .filter((fileName) => fileName.endsWith('.mdx'))
     .map((fileName) => {
@@ -31,6 +34,12 @@ export function getAllPosts(): BlogPostMetadata[] {
         featured_image: data.featured_image,
         readingTime: readingTime(content).text,
       } as BlogPostMetadata
+    })
+    .filter((post) => {
+      // Only include posts with dates today or in the past
+      const postDate = new Date(post.date)
+      postDate.setHours(0, 0, 0, 0)
+      return postDate <= today
     })
 
   // Sort posts by date in descending order
