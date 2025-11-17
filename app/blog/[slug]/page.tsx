@@ -179,7 +179,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
               tags={post.tags}
             />
 
-            <div className="prose prose-lg max-w-none">
+            <div className="prose prose-lg max-w-none overflow-hidden">
               <MDXRemote
                 source={post.content}
                 components={mdxComponents}

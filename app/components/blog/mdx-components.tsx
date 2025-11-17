@@ -128,10 +128,12 @@ export const mdxComponents: MDXComponentsProps = {
   ),
   // Tables
   table: ({ children, ...props }: React.HTMLAttributes<HTMLTableElement>) => (
-    <div className="overflow-x-auto mb-6">
-      <table className="min-w-full divide-y divide-border" {...props}>
-        {children}
-      </table>
+    <div className="overflow-x-auto mb-6 -mx-4 sm:mx-0">
+      <div className="inline-block min-w-full align-middle px-4 sm:px-0">
+        <table className="min-w-full divide-y divide-border border border-border rounded-lg" {...props}>
+          {children}
+        </table>
+      </div>
     </div>
   ),
   thead: ({ children, ...props }: React.HTMLAttributes<HTMLTableSectionElement>) => (
