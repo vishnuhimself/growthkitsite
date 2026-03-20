@@ -9,6 +9,9 @@ export function Footer() {
             © GrowthKit.
           </p>
           <div className="flex gap-4">
+            <Link href="/tools" className="text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground">
+              Tools
+            </Link>
             <Link href="/blog" className="text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground">
               Blog
             </Link>
